@@ -20,6 +20,7 @@
   width: fit-content;
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.177);
+  padding: 10px;
 }
 
 /* Mobile first */
