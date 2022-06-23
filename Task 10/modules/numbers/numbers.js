@@ -1,3 +1,5 @@
+'use strict'
+
 export {one, two, three, four, five,};
 
 let one = 1;
