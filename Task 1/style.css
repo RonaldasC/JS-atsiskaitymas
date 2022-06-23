@@ -15,7 +15,7 @@
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(170, 207, 106);
+  background-color: rgba(170, 207, 106, 0.386);
   display: block;
   width: fit-content;
   border-radius: 5px;
