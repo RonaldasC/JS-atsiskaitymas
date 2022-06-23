@@ -18,6 +18,6 @@ function converter(event) {
     const lbCalc= Number(imputValue) * 2.2046;
     const gCalc = Number(imputValue) / 0.0010000;
     const ozCalc = Number(imputValue) * 35.274;
-    const returnCalcValues = `Svarai (lb) - ${lbCalc} <br> Gramai (g) - ${gCalc} <br> Uncijos (oz) - ${ozCalc}`;
+    const returnCalcValues = `Svarai - ${lbCalc} (lb) <br> Gramai - ${gCalc} (g) <br> Uncijos - ${ozCalc} (oz)`;
     document.getElementById('output').innerHTML = returnCalcValues;
 }
