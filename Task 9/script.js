@@ -26,5 +26,5 @@ class Movie {
     }
 }
 
-const biudzetas = new Movie('Jurassic Park', 'Steven Spielberg', '1046000000');
+const biudzetas = new Movie('Jurassic Park', 'Steven Spielberg', 1046000000);
 biudzetas.wasExpensive();
