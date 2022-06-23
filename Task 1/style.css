@@ -7,6 +7,16 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
+#output {
+  font-size: 1.1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Mobile first */
 .wrapper {
   min-height: 100vh;
@@ -59,7 +69,8 @@ form {
   }
 
   #search,
-  #submit-btn {
+  #submit-btn,
+  #output  {
     font-size: 2em;
   }
 }
