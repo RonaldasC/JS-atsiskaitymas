@@ -24,3 +24,9 @@ function Calculator(a, b) {
         console.log(this.a / this.b);
     };
 }
+
+var skaiciuojam = new Calculator(4, 2);
+skaiciuojam.suma();
+skaiciuojam.subtraction();
+skaiciuojam.multiplication();
+skaiciuojam.division();
