@@ -48,3 +48,5 @@ async function getResponse(arg) {
     removeElement();
     getResponse(ENDPOINT);
   }
+
+  document.getElementById("btn").addEventListener("click", displayUsers);
