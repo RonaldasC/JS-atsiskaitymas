@@ -26,3 +26,5 @@ const getUserAverageAge = (arg) => {
   const sum = ages.reduce(reducer);
   return console.log(sum / ages.length);
 };
+
+getUserAverageAge(users);
