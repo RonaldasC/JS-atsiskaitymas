@@ -26,3 +26,10 @@ function filterDogOwers(arg) {
 }
 
 filterDogOwers(users);
+
+function filterAdults(arg) {
+  let user = arg.filter(person => person.age >= 18);
+  return console.log(user.map(a => a.name));
+}
+
+filterAdults(users);
