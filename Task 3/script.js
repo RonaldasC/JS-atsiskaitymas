@@ -22,3 +22,19 @@ async function getResponse(arg) {
     const data = await response.json();
     returnUserAvatar(data);
   }
+
+  function returnUserAvatar(arg) {
+    for (let i = 0; i < arg.length; i++) {
+      let user = arg[i].login;
+      let avatar = arg[i].avatar_url;
+      const box = document.getElementById("output");
+      const cardForDisplayBrand = document.createElement("div");
+      const cardForDisplayModel = document.createElement("div");
+      cardForDisplayBrand.classList.add("brand-card");
+      cardForDisplayModel.classList.add("model-card");
+      cardForDisplayBrand.innerHTML = `<H2>${user}</H2>`;
+      cardForDisplayModel.innerHTML = `<img src="${avatar}" alt="face" height="80px" width="70px"></img>`;
+      box.append(cardForDisplayBrand);
+      cardForDisplayBrand.append(cardForDisplayModel);
+    }
+  }
