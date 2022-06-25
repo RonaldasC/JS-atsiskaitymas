@@ -38,3 +38,8 @@ async function getResponse(arg) {
       cardForDisplayBrand.append(cardForDisplayModel);
     }
   }
+  
+  function removeElement() {
+    const element = document.getElementById("message");
+    element.remove();
+  }
