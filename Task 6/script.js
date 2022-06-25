@@ -28,3 +28,8 @@ const getUserAverageAge = (arg) => {
 };
 
 getUserAverageAge(users);
+
+function getUsersNames(arg) {
+  return console.log(arg.map(personsName => personsName.name));
+  };
+  getUsersNames(users);
