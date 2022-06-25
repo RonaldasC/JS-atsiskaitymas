@@ -6,3 +6,21 @@ multiplication(a, b) - priima du skaičius ir grąžina jų daugybos rezultatą;
 division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 'use strict'
+
+function Calculator(a, b) {
+    this.a = a;
+    this.b = b;
+    
+    this.suma = function () {
+        console.log(this.a + this.b);
+    },
+    this.subtraction = function () {
+        console.log(this.a - this.b);
+    }
+    this.multiplication = function () {
+        console.log(this.a * this.b);
+    };
+    this.division = function () {
+        console.log(this.a / this.b);
+    };
+}
