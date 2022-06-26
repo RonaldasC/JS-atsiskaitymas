@@ -27,7 +27,7 @@ function returnBrand(arg) {
   for (let i = 0; i < arg.length; i++) {
     {
       let brand = arg[i].brand;
-      let model = arg[i].models.join(" ");
+      let model = arg[i].models.join(`" "`);
       const cardForDisplayBrand = document.createElement("div");
       const cardForDisplayModel = document.createElement("div");
       const box = document.getElementById("output");
