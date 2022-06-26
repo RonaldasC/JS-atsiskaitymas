@@ -12,9 +12,17 @@ const audi = {
   color: 'white',
 };
 
+// function showObjectKeys(objArg) {
+//   const objValues = Object.values(objArg);
+// console.log(objValues);
+// }
+// showObjectKeys(audi);
+
+/**** nesupratau salygos ar keys grazint reik ar values todel parasiau abu variantus */
+
 function showObjectKeys(objArg) {
-  const objValues = Object.values(objArg);
-console.log(objValues);
+  const objkeys = Object.keys(objArg);
+console.log(objkeys);
 }
 
 showObjectKeys(audi);
