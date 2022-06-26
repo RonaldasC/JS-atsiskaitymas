@@ -25,6 +25,7 @@ const getUserAverageAge = (arg) => {
   const reducer = (total, currentValue) => total + currentValue;
   const sum = ages.reduce(reducer);
   return console.log(sum / ages.length);
+  //return console.log(Math.round(sum / ages.length)); //čia norėjau parodyt kad galima suapvalintą vidurkį išvest
 };
 
 getUserAverageAge(users);
