@@ -21,7 +21,7 @@ const users = [
 ];
 
 const getUserAverageAge = (arg) => {
-  const ages = arg.map((person) => person.age);
+  const ages = arg.map((person) => person.age); //perteklinis masyvas. buvo galima išsiversti ir su users
   const reducer = (total, currentValue) => total + currentValue;
   const sum = ages.reduce(reducer);
   return console.log(sum / ages.length);

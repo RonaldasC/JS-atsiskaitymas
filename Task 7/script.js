@@ -23,6 +23,7 @@ const audi = {
 function showObjectKeys(objArg) {
   const objkeys = Object.keys(objArg);
 console.log(objkeys);
+//reikėtų papildyti dar funkciją return žodeliu
 }
 
 showObjectKeys(audi);

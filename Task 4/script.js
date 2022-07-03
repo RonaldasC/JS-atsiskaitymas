@@ -15,7 +15,7 @@ const ENDPOINT = "cars.json";
 fetch(ENDPOINT)
   .then((response) => response.json())
   .then((data) => {
-    data;
+    data; //nereikia šios eilutės
     returnBrand(data);
   })
   .catch((err) => console.log(err));
@@ -24,6 +24,7 @@ fetch(ENDPOINT)
 nes užduotis to neprašė nors ir kodas švaresnis atrodė*/
 
 function returnBrand(arg) {
+  //vėlgi, forEach būtų profesionaliau
   for (let i = 0; i < arg.length; i++) {
     {
       let brand = arg[i].brand;
@@ -33,7 +34,7 @@ function returnBrand(arg) {
       const box = document.getElementById("output");
       cardForDisplayBrand.classList.add("brand-card");
       cardForDisplayModel.classList.add("model-card");
-      cardForDisplayBrand.innerHTML = `<H2>${brand}</H2>`;
+      cardForDisplayBrand.innerHTML = `<H2>${brand}</H2>`; //tagai įprastai rašomi mažosiomis raidėmis
       cardForDisplayModel.innerHTML = `<H3>${model}</H3>`;
       box.append(cardForDisplayBrand);
       cardForDisplayBrand.append(cardForDisplayModel);

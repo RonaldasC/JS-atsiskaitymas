@@ -18,6 +18,8 @@ class Movie {
         this.budget = budget;
     }
     wasExpensive() {
+        // žemiau eilutes būtų galima supaprastinti return this.budget > 100000000
+        //taip pat, netikslinga čia naudoti template literals. Jie skirti tik išvedimui (console, innerHTML ir pan), bet ne skaičiavimams ar logikai
         if (`${this.budget}` > 100000000) {
         console.log(true) 
         } else { 

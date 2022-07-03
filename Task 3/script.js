@@ -24,11 +24,11 @@ async function getResponse(arg) {
 }
 
 function returnUserAvatar(arg) {
-  for (let i = 0; i < arg.length; i++) {
-    let user = arg[i].login;
+  for (let i = 0; i < arg.length; i++) { //vietoj for daugeliu atvejų tinka naudoti forEach. Išsprendžia visus po to [i] kintamųjų naudojimus
+    let user = arg[i].login; //būtų tikslingiau naudoti const
     let avatar = arg[i].avatar_url;
     const box = document.getElementById("output");
-    const cardForDisplayBrand = document.createElement("div");
+    const cardForDisplayBrand = document.createElement("div"); //gana įdomus kintamojo pavadinimas. Kopijuojant pasistenkit pakoreguot.
     const cardForDisplayModel = document.createElement("div");
     cardForDisplayBrand.classList.add("brand-card");
     cardForDisplayModel.classList.add("model-card");
