@@ -14,7 +14,7 @@ document.getElementById('submit-btn').addEventListener('click', converter);
 
 function converter(event) {
     event.preventDefault();
-    let imputValue = document.getElementById('search').value;
+    let imputValue = document.getElementById('search').value; //čia tikslingiau naudoti const vietoj let, nes tolimesnėje kodo dalyje reikšmė nekinta.
     const lbCalc= Number(imputValue) * 2.2046;
     const gCalc = Number(imputValue) / 0.0010000;
     const ozCalc = Number(imputValue) * 35.274;

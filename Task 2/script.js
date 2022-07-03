@@ -11,5 +11,5 @@ let counter = 0;
 
 function paspaudimuSkaiciuokle() {
     counter++;
-    document.getElementById("btn__state").innerHTML = `${counter}`;
+    document.getElementById("btn__state").innerHTML = `${counter}`; //kadangi counter neturi jokių html tagų, tikslingiau vietoj innerHTML naudoti innerText
 }

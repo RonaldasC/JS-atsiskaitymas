@@ -21,15 +21,15 @@ const users = [
 ];
 
 function filterDogOwers(arg) {
-  let user = arg.filter((person) => person.hasDog != false);
-  return console.log(user.map((a) => a.name));
+  let user = arg.filter((person) => person.hasDog != false); //su boolean person.hasDog yra true, !person.hasDog yra false. === ar kiti palyginimai nenaudojami
+  return console.log(user.map((a) => a.name)); //čia nebuvo prašoma išvesti tik vardų
 }
 
 filterDogOwers(users);
 
 function filterAdults(arg) {
   let user = arg.filter((person) => person.age >= 18);
-  return console.log(user.map((a) => a.name));
+  return console.log(user.map((a) => a.name)); //šioje ir praeitoje funkcijoje console būtų buvę tikslingiau naudoti funkcijos iškvietimo eilutėse. Funkcija turi būti atsakinga tik už patį funkcionalumą
 }
 
 filterAdults(users);
